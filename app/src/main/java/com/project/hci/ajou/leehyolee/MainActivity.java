@@ -9,11 +9,16 @@ import android.view.MenuItem;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
 
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private TextView mTextMessage;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -25,10 +30,11 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_calendar:
                     //mTextMessage.setText(R.string.title_home);
                     replaceFragment(Calendar.newInstance());
+
                     return true;
                 case R.id.navigation_timer:
                     replaceFragment(Timer.newInstance());
-                    //mTextMessage.setText(R.string.title_dashboard);
+
                     return true;
                 case R.id.navigation_awards:
                     replaceFragment(Awards.newInstance());
@@ -44,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       // mTextMessage = (TextView) findViewById(R.id.message);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -52,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         transaction.add(R.id.frame_layout, Calendar.newInstance()).commit();
 
     }
+
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
