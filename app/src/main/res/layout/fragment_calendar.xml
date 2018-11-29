@@ -10,13 +10,14 @@
         android:id="@+id/calendarView"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        app:mcv_showOtherDates="all"
-        app:mcv_selectionColor="@color/taskColor">
+        app:mcv_selectionColor="@color/colorPrimary">
 
     </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
 
     <ListView
+        android:id="@+id/calendarListView"
         android:layout_width="match_parent"
+        android:divider="@color/taskColor"
         android:layout_height="match_parent" />
 
 
