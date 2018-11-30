@@ -17,10 +17,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2fced29-87bb-4c7e-af18-e7db276cf6ae" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarListViewAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/DBManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/TaskReaderContract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -29,12 +25,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/Calendar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/calendar_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/calendar_task.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,8 +53,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="69" column="93" selection-start-line="69" selection-start-column="93" selection-end-line="69" selection-end-column="93" />
+            <state relative-caret-position="274">
+              <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,15 +71,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calendar.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Calendar.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/Calendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="1683">
+              <caret line="99" column="24" lean-forward="true" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2579#2797#0" expanded="true" />
-                <element signature="e#2796#2797#0" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
+                <element signature="e#1334#1335#0" expanded="true" />
+                <element signature="e#2893#4069#0" expanded="true" />
+                <element signature="e#4068#4069#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalendarTask.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CalendarTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarTask.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding>
                 <element signature="e#172#173#0" expanded="true" />
                 <element signature="e#199#200#0" expanded="true" />
@@ -174,11 +169,10 @@
       <file leaf-file-name="CalendarListViewAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarListViewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="69" />
+            <state relative-caret-position="137">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
                 <element signature="e#257#258#0" expanded="true" />
                 <element signature="e#314#315#0" expanded="true" />
                 <element signature="e#341#342#0" expanded="true" />
@@ -2489,14 +2483,14 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/TodayDecorator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/OneDayDecorator.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarListViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/calendar_task.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/TaskReaderContract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/DBManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarTask.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarListViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/Calendar.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarTask.java" />
       </list>
     </option>
   </component>
@@ -2701,7 +2695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543292740274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add sqlite">
+      <created>1543479943038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543479943038</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2728,11 +2729,11 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.54139435" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Logcat" order="7" visible="true" weight="0.3496732" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.49891067" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21375267" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21375267" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Gradle" order="3" />
@@ -2781,7 +2782,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add auto task in task list" />
     <MESSAGE value="add calendar view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add calendar view" />
+    <MESSAGE value="add sqlite" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sqlite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3046,16 +3048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/Awards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/OneDayDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -3093,28 +3085,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarListViewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="69" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="69" column="93" selection-start-line="69" selection-start-column="93" selection-end-line="69" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3131,29 +3112,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/Calendar.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/Awards.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="204">
+          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2579#2797#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarTask.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/CalendarListViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="137">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/project/hci/ajou/leehyolee/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="99" column="24" lean-forward="true" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#2893#4069#0" expanded="true" />
+            <element signature="e#4068#4069#0" expanded="true" />
           </folding>
         </state>
       </provider>

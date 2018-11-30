@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         values.put(TaskReaderContract.CalendarEntry.COLUMN_TIME, simpleTimeFormat.format(new Date(System.currentTimeMillis())));
         values.put(TaskReaderContract.CalendarEntry.COLUMN_TASK, "Testing..");
 
-        long newRowId = db.insert(TaskReaderContract.CalendarEntry.TABLE_NAME, null, values);
+        //long newRowId = db.insert(TaskReaderContract.CalendarEntry.TABLE_NAME, null, values);
 
     }
 
