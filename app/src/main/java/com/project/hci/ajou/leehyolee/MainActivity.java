@@ -50,9 +50,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setSelectedItemId(R.id.navigation_timer);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.frame_layout, Calendar.newInstance()).commit();
+        transaction.add(R.id.frame_layout, Timer.newInstance()).commit();
 
         DBManager dbManager = new DBManager(getBaseContext());
 
