@@ -1,5 +1,5 @@
 package com.project.hci.ajou.leehyolee;
-
+/*    데이터 전달 line 63~       */
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -58,11 +58,12 @@ public class Timer extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(inflater.getContext(), TimerActivity.class);
                 Task task = (Task)parent.getAdapter().getItem(position);
-                if (position == 0) intent.putExtra("task", auto.getTask());
-
-                else intent.putExtra("task", task.getName());
-
-
+                if (position == 0) intent.putExtra("task", auto.getTask()); //auto 일 때
+                ///auto id 음수로 해서 id로도 전달 가능할 듯
+                else intent.putExtra("task", task.getName());  //task 이름 timer activity로 전달
+                // activity 에서
+                // String taskName = getIntent().getStringExtra("task");
+                // 로 받음
                 startActivity(intent);
             }
         });
