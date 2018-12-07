@@ -23,7 +23,7 @@ public class Timer extends Fragment {
         View view = inflater.inflate(R.layout.fragment_timer, container, false);
         ListView listView = (ListView) view.findViewById(R.id.taskListView);
         ArrayList<Task> arrayList = new ArrayList<>();
-        final Task autoTask = new Task("AUTO");
+        Task autoTask = new Task("AUTO");
         arrayList.add(autoTask);
 
         taskListViewAdapter adapter = new taskListViewAdapter(this.getContext(), R.layout.task, arrayList);
@@ -33,7 +33,6 @@ public class Timer extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(inflater.getContext(), TimerActivity.class);
-                intent.putExtra("todoName",autoTask.getName());
                 startActivity(intent);
             }
         });

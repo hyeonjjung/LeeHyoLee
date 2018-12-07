@@ -2,11 +2,18 @@ package com.project.hci.ajou.leehyolee;
 
 public class Task {
     private String name;
+    private int id;
 
     public String getName() {
         return name;
     }
-    public Task(String name) {
+    public int getId() {
+        return id;
+    }
+
+    public Task(int id, String name)
+    {
+        this.id = id;
         this.name = name;
     }
 }
