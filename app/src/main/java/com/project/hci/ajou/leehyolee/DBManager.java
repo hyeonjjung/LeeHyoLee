@@ -29,4 +29,5 @@ public class DBManager extends SQLiteOpenHelper {
         db.execSQL(CALENDAR_DELETE_ENTRIES);
         onCreate(db);
     }
+
 }
