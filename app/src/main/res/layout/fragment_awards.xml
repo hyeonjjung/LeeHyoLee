@@ -68,18 +68,18 @@
             android:id="@+id/imageView2"
             android:layout_width="97dp"
             android:layout_height="37dp"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="97dp"
             android:layout_height="37dp"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="97dp"
             android:layout_height="37dp"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
     </TableRow>
 
     <!-- display this button in 3rd column via layout_column(zero based) -->
@@ -94,20 +94,20 @@
             android:layout_height="37dp"
             android:layout_width="97dp"
             android:layout_column="1"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_height="37dp"
             android:layout_width="97dp"
             android:layout_column="2"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
         <ImageView
             android:id="@+id/imageView7"
             android:layout_height="37dp"
             android:layout_width="97dp"
             android:layout_column="3"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
     </TableRow>
 
     <!-- display this button in 2nd column via layout_column(zero based) -->
@@ -122,20 +122,20 @@
             android:layout_height="37dp"
             android:layout_width="97dp"
             android:layout_column="1"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
 
         <ImageView
             android:id="@+id/imageView9"
             android:layout_height="37dp"
             android:layout_width="97dp"
             android:layout_column="2"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
         <ImageView
             android:id="@+id/imageView10"
             android:layout_height="37dp"
             android:layout_width="97dp"
             android:layout_column="3"
-            app:srcCompat="@drawable/icon_award_x" />
+            app:srcCompat="@drawable/saward" />
     </TableRow>
 
 </TableLayout>

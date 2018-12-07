@@ -2,18 +2,14 @@ package com.project.hci.ajou.leehyolee;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.provider.BaseColumns;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 
@@ -23,7 +19,6 @@ import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class Calendar extends Fragment {
     private static final String TAG = "Calendar";
@@ -39,7 +34,7 @@ public class Calendar extends Fragment {
     private SQLiteDatabase db;
     private ArrayList<CalendarTask> arrayList;
 
-    public static Calendar newInstance() {
+    public static Fragment newInstance() {
         return new Calendar();
     }
 

@@ -138,7 +138,7 @@ public class TimerActivity extends AppCompatActivity {
                 DBManager dbManager = new DBManager(getBaseContext());
                 SQLiteDatabase db = dbManager.getWritableDatabase();
                 long newRowId = db.insert(TaskReaderContract.CalendarEntry.TABLE_NAME, null, values);
-                //Toast.makeText(TimerActivity.this, formatDate, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TimerActivity.this, todoName, Toast.LENGTH_SHORT).show();
             }
         });
         builder.setNegativeButton("No",null);

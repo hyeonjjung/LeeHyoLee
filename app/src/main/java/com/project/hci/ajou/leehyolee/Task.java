@@ -4,6 +4,9 @@ public class Task {
     private String name;
     private int id;
 
+    public Task(String auto) {
+    }
+
     public String getName() {
         return name;
     }
