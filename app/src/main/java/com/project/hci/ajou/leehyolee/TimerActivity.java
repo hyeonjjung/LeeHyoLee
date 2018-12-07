@@ -54,7 +54,7 @@ public class TimerActivity extends AppCompatActivity {
         mProgressBar = findViewById(R.id.myProgressBar);
         todoNameView =  findViewById(R.id.title_of_todo);
         Intent intent = new Intent(this.getIntent());
-        todoName = intent.getStringExtra("todoName") + "!";
+        todoName = intent.getStringExtra("task");
         mButtonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

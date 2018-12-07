@@ -5,6 +5,7 @@ public class Task {
     private int id;
 
     public Task(String auto) {
+        this.name = auto;
     }
 
     public String getName() {
