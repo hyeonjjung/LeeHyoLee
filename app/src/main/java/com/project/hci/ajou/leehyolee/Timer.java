@@ -28,6 +28,8 @@ public class Timer extends Fragment {
     private taskListViewAdapter adapter;
     private FloatingActionButton addButton;
     private AutoTask auto = new AutoTask();
+    private Intent intent;
+    private String autoTaskName;
 
     public static Timer newInstance() {
         return new Timer();
@@ -38,6 +40,7 @@ public class Timer extends Fragment {
         view = inflater.inflate(R.layout.fragment_timer, container, false);
         addButton = (FloatingActionButton) view.findViewById(R.id.floatingActionButton4);
         listView = (ListView) view.findViewById(R.id.taskListView);
+
         taskDB = new TaskDB(getContext());
         arrayList = taskDB.getResult();
         autoTask = new Task(0,"AUTO");
@@ -56,14 +59,32 @@ public class Timer extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(inflater.getContext(), TimerActivity.class);
+                intent = new Intent(inflater.getContext(), TimerActivity.class);
                 Task task = (Task)parent.getAdapter().getItem(position);
-                if (position == 0) intent.putExtra("task", auto.getTask());
 
-                else intent.putExtra("task", task.getName());
+                if (position == 0) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                    builder.setTitle("AUTO Task");
+                    autoTaskName = auto.getTask();
+                    builder.setMessage("Are you okay about \""+autoTaskName+"\"?");
+                    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            intent.putExtra("task", autoTaskName);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setNegativeButton("No", null);
+                    builder.show();
+                }
+
+                else {
+                    intent.putExtra("task", task.getName());
+                    startActivity(intent);
+                }
 
 
-                startActivity(intent);
+
             }
         });
         registerForContextMenu(listView);
@@ -77,7 +98,7 @@ public class Timer extends Fragment {
         builder.setView(view);
         final EditText userInput = (EditText) view.findViewById(R.id.userInput);
         builder.setTitle("New Task");
-        builder.setPositiveButton("ok",
+        builder.setPositiveButton("Yes",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         String task = userInput.getText().toString();
@@ -86,7 +107,7 @@ public class Timer extends Fragment {
                         arrayList.add(newTask);
                     }
                 });
-        builder.setNegativeButton("no",
+        builder.setNegativeButton("No",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
 

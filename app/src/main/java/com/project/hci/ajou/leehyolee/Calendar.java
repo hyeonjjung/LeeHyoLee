@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +17,10 @@ import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 public class Calendar extends Fragment {
@@ -28,6 +31,7 @@ public class Calendar extends Fragment {
     private CalendarListViewAdapter calendarListViewAdapter;
 
     private String partQuery =  "SELECT * FROM "+TaskReaderContract.CalendarEntry.TABLE_NAME + " WHERE "+TaskReaderContract.CalendarEntry.COLUMN_DATE;
+    private String eventQuery = "SELECT * FROM "+TaskReaderContract.CalendarEntry.TABLE_NAME;
     private String selectQuery;
 
     private DBManager dbManager;
@@ -68,6 +72,16 @@ public class Calendar extends Fragment {
             } while (cursor.moveToNext());
         }
 
+        ArrayList<String> eventDateList = new ArrayList<>();
+        cursor = db.rawQuery(eventQuery, null);
+        if(cursor.moveToFirst()) {
+            do {
+                eventDateList.add(cursor.getString(1));
+            } while (cursor.moveToNext());
+        }
+
+
+
 
         listView = (ListView) view.findViewById(R.id.calendarListView);
 
@@ -79,6 +93,9 @@ public class Calendar extends Fragment {
 
         materialCalendarView.addDecorator(new TodayDecorator(inflater.getContext()));
         materialCalendarView.setSelectedDate(CalendarDay.today());
+
+        materialCalendarView.addDecorator(new OneDayDecorator(getContext(), eventDateList));
+
         materialCalendarView.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {

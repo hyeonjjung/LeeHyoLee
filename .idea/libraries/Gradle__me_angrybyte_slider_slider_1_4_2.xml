@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: me.angrybyte.slider:slider-1.4.2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/slider-1.4.2.aar/e9c09042ca99a35742f6b7e98f448814/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/slider-1.4.2.aar/e9c09042ca99a35742f6b7e98f448814/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/slider-1.4.2.aar/105d61170dbec97398cf705dc4746be6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/slider-1.4.2.aar/105d61170dbec97398cf705dc4746be6/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

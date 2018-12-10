@@ -50,7 +50,7 @@ public class CalendarListViewAdapter extends BaseAdapter {
 
 
         TextView dateTextView = (TextView) convertView.findViewById(R.id.calendarDayTextView);
-        dateTextView.setText(calendarTask.getDate()+" / "+calendarTask.getTime());
+        dateTextView.setText(""+calendarTask.getTime());
         TextView nameTextView = (TextView) convertView.findViewById(R.id.calendarTaskTextView);
         nameTextView.setText(calendarTask.getName());
 

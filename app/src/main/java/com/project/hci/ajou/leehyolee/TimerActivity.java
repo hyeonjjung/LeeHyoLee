@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -22,20 +23,23 @@ public class TimerActivity extends AppCompatActivity {
 
     /*http://liveonthekeyboard.tistory.com/129*/
 
-    private static final long START_TIME_IN_MILLIS = 60000; //1분 -> 나중에 여기다가 설정하면 될듯.
+    private static final String TAG = "TimerActivity";
+
+    private static final long START_TIME_IN_MILLIS = 3000; //1분 -> 나중에 여기다가 설정하면 될듯.
     private TextView mTextViewCountDown;
     private TextView todoNameView;
     private Button mButtonStart;
     private ProgressBar mProgressBar;
     private CountDownTimer mCountDownTimer;
     private CountDownTimer pCountDownTimer;
-    private boolean mTimerRunning;
+    private boolean mTimerRunning = false;
     private long mTimerLeftInMillis = START_TIME_IN_MILLIS; //xml에서 -10
     int value =590;
     //long now = System.currentTimeMillis();
     ContentValues values = new ContentValues();
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyMMdd");
     SimpleDateFormat simpleTimeFormat = new SimpleDateFormat("hh:mm aaa");
+
     String todoName = "";
 /*    // 현재시간을 date 변수에 저장한다.
     Date date = new Date(now);
@@ -53,14 +57,18 @@ public class TimerActivity extends AppCompatActivity {
         mButtonStart = findViewById(R.id.button_start);
         mProgressBar = findViewById(R.id.myProgressBar);
         todoNameView =  findViewById(R.id.title_of_todo);
+
         Intent intent = new Intent(this.getIntent());
         todoName = intent.getStringExtra("task");
+
+        todoNameView.setText(todoName);
+        todoNameView.setVisibility(View.VISIBLE);
         mButtonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!mTimerRunning) {
-                    todoNameView.setText(todoName);
-                    todoNameView.setVisibility(View.VISIBLE);
+
+
                     mButtonStart.setVisibility(View.GONE);
                     mTextViewCountDown.setVisibility(View.VISIBLE);
 
@@ -70,7 +78,6 @@ public class TimerActivity extends AppCompatActivity {
                 }
             }
         });
-
 
     }
 
@@ -85,12 +92,22 @@ public class TimerActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                show();
+                if (mTimerRunning) {
+                    show();
+                }
             }
         }.start();
 
         mTimerRunning = true;
-        //mButtonStart.setText("");
+    }
+
+    private void stopTimer() {
+        if(mCountDownTimer != null && mProgressBar != null) {
+            if(mTimerRunning) {
+                mCountDownTimer.cancel();
+                mTimerRunning = false;
+            }
+        }
     }
     public void startProgressBar(){
         pCountDownTimer = new CountDownTimer(mTimerLeftInMillis,100) {
@@ -98,7 +115,8 @@ public class TimerActivity extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 mTimerLeftInMillis = millisUntilFinished;
                 if(value>0) {
-                    mProgressBar.setProgress(--value);
+                    value = value - 20;
+                    mProgressBar.setProgress(value);
                 }
 
             }
@@ -138,10 +156,38 @@ public class TimerActivity extends AppCompatActivity {
                 DBManager dbManager = new DBManager(getBaseContext());
                 SQLiteDatabase db = dbManager.getWritableDatabase();
                 long newRowId = db.insert(TaskReaderContract.CalendarEntry.TABLE_NAME, null, values);
-                Toast.makeText(TimerActivity.this, todoName, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(TimerActivity.this, todoName, Toast.LENGTH_SHORT).show();
+
+                finish();
             }
         });
-        builder.setNegativeButton("No",null);
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
         builder.show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Cancel the task");
+        builder.setMessage("Are you okay for finishing?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                TimerActivity.super.onBackPressed();
+            }
+        });
+        builder.setNegativeButton("No", null);
+        builder.show();
+    }
+
+    @Override
+    protected void onStop() {
+        stopTimer();
+        super.onStop();
     }
 }

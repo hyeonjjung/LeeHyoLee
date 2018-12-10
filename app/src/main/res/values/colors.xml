@@ -4,4 +4,19 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="taskColor">#C6EADF</color>
+    <color name="darkGray">#585858</color>
+    <color name= "gray">#BDBDBD</color>
+    <color name="black">#000000</color>
+
+    <color name="color1">#F0E5DE</color>
+    <color name="color2">#ABD0CE</color>
+    <color name="color3">#7C7877</color>
+    <color name="color4">#D9D4CF</color>
+
+
+    <color name="level1">#ede574</color>
+    <color name="level2">#f9d423</color>
+    <color name="level3">#fc913a</color>
+    <color name="level4">#ff4e50</color>
+
 </resources>

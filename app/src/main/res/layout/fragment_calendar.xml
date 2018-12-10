@@ -10,7 +10,7 @@
         android:id="@+id/calendarView"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        app:mcv_selectionColor="@color/colorPrimary">
+        app:mcv_selectionColor="@color/gray">
 
     </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
 

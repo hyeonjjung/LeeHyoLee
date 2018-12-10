@@ -25,12 +25,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
-        app:backgroundTint="@color/colorPrimary"
+        app:backgroundTint="@color/color2"
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@drawable/pluse" />
 
     <TextView
         android:id="@+id/textView2"
@@ -41,7 +41,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="1dp"
         android:accessibilityHeading="false"
-        android:fontFamily="casual"
+        android:fontFamily="serif"
         android:text="Task List"
         android:textSize="25dp"
         android:textStyle="bold"
