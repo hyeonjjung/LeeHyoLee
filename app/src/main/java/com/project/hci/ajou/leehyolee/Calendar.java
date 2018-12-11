@@ -72,11 +72,31 @@ public class Calendar extends Fragment {
             } while (cursor.moveToNext());
         }
 
+        // task 실행된 날짜 표시하기
         ArrayList<String> eventDateList = new ArrayList<>();
+        ArrayList<String> levelOneDateList = new ArrayList<>();
+        ArrayList<String> levelTwoDateList = new ArrayList<>();
+        ArrayList<String> levelThreeDateList = new ArrayList<>();
+        ArrayList<String> levelFourDateList = new ArrayList<>();
         cursor = db.rawQuery(eventQuery, null);
+        int count = 1;
         if(cursor.moveToFirst()) {
             do {
-                eventDateList.add(cursor.getString(1));
+                String date = cursor.getString(1);
+                if(levelOneDateList.contains(date)) {
+                    levelTwoDateList.add(date);
+                    levelOneDateList.remove(date);
+                } else if (levelTwoDateList.contains(date)) {
+                    levelThreeDateList.add(date);
+                    levelTwoDateList.remove(date);
+                } else if (levelThreeDateList.contains(date)) {
+                    levelFourDateList.add(date);
+                    levelThreeDateList.remove(date);
+                } else if (levelFourDateList.contains(date)) {
+
+                } else {
+                    levelOneDateList.add(date);
+                }
             } while (cursor.moveToNext());
         }
 
@@ -94,7 +114,10 @@ public class Calendar extends Fragment {
         materialCalendarView.addDecorator(new TodayDecorator(inflater.getContext()));
         materialCalendarView.setSelectedDate(CalendarDay.today());
 
-        materialCalendarView.addDecorator(new OneDayDecorator(getContext(), eventDateList));
+        materialCalendarView.addDecorator(new OneDayDecorator(getContext(), levelFourDateList));
+        materialCalendarView.addDecorator(new levelOneDecorator(getContext(), levelOneDateList));
+        materialCalendarView.addDecorator(new levelTwoDecorator(getContext(), levelTwoDateList));
+        materialCalendarView.addDecorator(new levelThreeDecorator(getContext(), levelThreeDateList));
 
         materialCalendarView.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override

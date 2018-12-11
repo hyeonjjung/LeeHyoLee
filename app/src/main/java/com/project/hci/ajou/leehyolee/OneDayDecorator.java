@@ -44,6 +44,6 @@ public class OneDayDecorator implements DayViewDecorator {
 
     @Override
     public void decorate(DayViewFacade view) {
-        view.addSpan(new DotSpan(5, context.getResources().getColor(R.color.level4)));
+        view.addSpan(new DotSpan(7, context.getResources().getColor(R.color.level4)));
     }
 }

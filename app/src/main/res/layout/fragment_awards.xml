@@ -75,23 +75,68 @@
         android:gravity="center"
         android:padding="5dip" >
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/award1ImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/award3_2" />
+
+            <TextView
+                android:id="@+id/award1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+
+           android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/award2ImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/award1_2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/award3ImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/award2_2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
+
     </TableRow>
 
     <!-- display this button in 3rd column via layout_column(zero based) -->
@@ -102,23 +147,66 @@
         android:gravity="center"
         android:padding="5dip" >
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
+            <ImageView
+                android:id="@+id/award4ImageView"
+                android:layout_width="97dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/award4_2" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/award5ImageView"
+                android:layout_width="97dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/award5_2" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/award6ImageView"
+                android:layout_width="97dp"
+                android:layout_gravity="center"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/award6_2" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
+
     </TableRow>
 
     <!-- display this button in 2nd column via layout_column(zero based) -->
@@ -129,23 +217,65 @@
         android:gravity="center"
         android:padding="5dip" >
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
+            <ImageView
+                android:id="@+id/award7ImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/award9_2" />
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="97dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/saward" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/award8ImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/award7_2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/award9ImageView"
+                android:layout_width="90dp"
+                android:layout_gravity="center"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/awrad8_2" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="..." />
+        </LinearLayout>
     </TableRow>
 
 </TableLayout>

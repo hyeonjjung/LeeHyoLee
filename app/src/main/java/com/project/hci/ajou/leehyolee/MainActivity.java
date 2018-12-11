@@ -63,9 +63,13 @@ public class MainActivity extends AppCompatActivity {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyMMdd");
         SimpleDateFormat simpleTimeFormat = new SimpleDateFormat("hh:mm aaa");
 
+        String date = "181202";
+        String time = "11:00 PM";
+
         ContentValues values = new ContentValues();
-        values.put(TaskReaderContract.CalendarEntry.COLUMN_DATE, simpleDateFormat.format(new Date(System.currentTimeMillis())));
-        values.put(TaskReaderContract.CalendarEntry.COLUMN_TIME, simpleTimeFormat.format(new Date(System.currentTimeMillis())));
+
+        values.put(TaskReaderContract.CalendarEntry.COLUMN_DATE, date);
+        values.put(TaskReaderContract.CalendarEntry.COLUMN_TIME, time);
         values.put(TaskReaderContract.CalendarEntry.COLUMN_TASK, "Testing..");
 
         //long newRowId = db.insert(TaskReaderContract.CalendarEntry.TABLE_NAME, null, values);
